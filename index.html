@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Zheng Ma</title>
+    <title>Zheng Ma | Astrophysics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -32,6 +32,15 @@
             opacity: 0.85;
         }
 
+        .eyebrow {
+            margin: 0 0 8px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #7cc4ff;
+        }
+
         main {
             max-width: 800px;
             margin: 40px auto;
@@ -47,6 +56,34 @@
             padding-bottom: 8px;
             margin-bottom: 15px;
             font-size: 1.5rem;
+        }
+
+        .interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .interests li {
+            padding: 14px 16px;
+            border-left: 3px solid #0066cc;
+            background: #fff;
+        }
+
+        .papers {
+            padding-left: 1.25rem;
+        }
+
+        .papers li {
+            margin-bottom: 16px;
+        }
+
+        .paper-meta {
+            display: block;
+            color: #666;
+            font-size: 0.93rem;
         }
 
         footer {
@@ -69,40 +106,62 @@
 <body>
 
 <header>
+    <p class="eyebrow">Astrophysics</p>
     <h1>Zheng Ma</h1>
-    <p>Astrophysics Researcher</p>
+    <p>Graduate Student · University of Arizona</p>
 </header>
 
 <main>
     <section>
-        <h2>About Me</h2>
+        <h2>About</h2>
         <p>
-            I am an astrophysics researcher working on high-redshift galaxies and active galactic nuclei (AGN),
-            with a focus on imaging and spectroscopic analysis.
+            I am a graduate student at the University of Arizona since 2022, where I have worked with Dr. Eiichi
+            Egami. I study galaxies and accreting supermassive black holes in the early universe, and I am a member of
+            the JWST Advanced Deep Extragalactic Survey (JADES) collaboration. My work combines deep JWST imaging and
+            spectroscopy with multiwavelength observations and forward modelling to investigate how black holes and
+            their host galaxies grow together.
         </p>
     </section>
 
     <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>AGN Imaging Decomposition</strong> — 
-                Separating AGN and host-galaxy light using PSF and Sérsic modeling to study galaxy structure and black hole growth.
-            </li>
+        <h2>Research</h2>
+        <ul class="interests">
+            <li><strong>High-redshift galaxies and AGN</strong><br>Tracing galaxy assembly and black-hole growth across cosmic time.</li>
+            <li><strong>JWST imaging and spectroscopy</strong><br>Using NIRCam and NIRSpec observations to study faint, distant sources.</li>
+            <li><strong>AGN–host decomposition</strong><br>Separating unresolved nuclear light from host-galaxy emission with PSF and Sérsic modelling.</li>
+            <li><strong>Black-hole–galaxy coevolution</strong><br>Testing the connection between supermassive black holes and their host galaxies in the early universe.</li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        <ol class="papers">
+            <li>
+                <a href="https://arxiv.org/abs/2607.22966">A quasar hatching from a buried red phase at <em>z</em> = 3.7</a>
+                <span class="paper-meta">Zheng Ma et al. (2026) · submitted</span>
+            </li>
+            <li>
+                <a href="https://arxiv.org/abs/2601.15962">Undermassive Hosts of <em>z</em> = 4–6 AGN from JWST/NIRCam Image Decomposition with CONGRESS, FRESCO, and JADES</a>
+                <span class="paper-meta">Zheng Ma et al. (2026) · submitted to <em>The Astrophysical Journal</em></span>
+            </li>
+            <li>
+                <a href="https://arxiv.org/abs/2503.15587">Slitless Areal Pure-Parallel HIgh-Redshift Emission Survey (SAPPHIRES): Early Data Release of Deep JWST/NIRCam Images and Spectra in MACS J0416 Parallel Field</a>
+                <span class="paper-meta">Fengwu Sun et al., including Zheng Ma (2025) · submitted to <em>The Astrophysical Journal Supplement Series</em></span>
+            </li>
+        </ol>
     </section>
 
     <section>
         <h2>Contact</h2>
         <p>
             Email: <a href="mailto:mazh@arizona.edu">mazh@arizona.edu</a><br>
-            GitHub: <a href="#">github.com/plusante</a>
+            GitHub: <a href="https://github.com/zhengmaastro">github.com/zhengmaastro</a>
         </p>
     </section>
 </main>
 
 <footer>
-    © 2025 Zheng Ma
+    © 2026 Zheng Ma
 </footer>
 
 </body>
